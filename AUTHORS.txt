@@ -1,0 +1,8 @@
+(* OASIS_START *)
+(* DO NOT EDIT (digest: 5b198a781f4f5882613273de9199e517) *)
+
+Authors of Criticism:
+
+* Iphy
+
+(* OASIS_STOP *)
