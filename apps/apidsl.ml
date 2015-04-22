@@ -1,0 +1,1 @@
+let passes = ApiPasses.all
