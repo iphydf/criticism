@@ -10,4 +10,4 @@ Executable apps
   Path:       .
   BuildTools: ocamlbuild
   MainIs:     apps.ml
-  BuildDepends: ppx_deriving.std
+#  BuildDepends: ppx_deriving.std
