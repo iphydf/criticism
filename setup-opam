@@ -1,4 +1,0 @@
-#!/bin/sh
-
-echo "-----> Installing menhir and deriving"
-opam install -y menhir ppx_deriving
