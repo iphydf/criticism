@@ -1,1 +1,3 @@
 "apidsl": include
+
+<*.ml{,i}>: thread, package(core)
