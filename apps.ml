@@ -2,8 +2,21 @@ open Core.Std
 open Async.Std
 open Cohttp_async
 
+let parse input =
+  let lexbuf = Lexing.from_string input in
+
+  let state = ApiLexer.state () in
+  let api = ApiParser.parse_api (ApiLexer.token state) lexbuf in
+
+  api
+
+
 let apigen input =
-  input ^ " hehe"
+  try
+    let ApiAst.Api (pre, api, post) = parse input in
+    ApiPasses.all pre api post
+  with e ->
+    "// Error: " ^ Exn.to_string e ^ "\n"
 
 
 let start_server port () =

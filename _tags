@@ -1,3 +1,5 @@
+true: use_menhir
+
 "apps": include
 
 <*.ml{,i}>: thread, package(cohttp.async), package(async), package(core)
