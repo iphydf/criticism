@@ -1,2 +1,4 @@
 menhir
 ppx_deriving
+async
+cohttp
