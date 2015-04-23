@@ -1,1 +1,4 @@
 "apps": include
+
+<*.ml{,i}>: thread, package(cohttp.async), package(async), package(core)
+<*.native>: thread, package(cohttp.async), package(async), package(core)
