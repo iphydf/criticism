@@ -4,5 +4,4 @@ true: bin_annot
 
 "apps": include
 
-<*.ml{,i}>: thread, package(cohttp.async), package(async), package(core)
-<*.native>: thread, package(cohttp.async), package(async), package(core)
+<*.{native,byte,ml,mli}>: thread, package(cohttp.async), package(async), package(core), package(menhirLib)
